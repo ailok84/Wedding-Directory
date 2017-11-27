@@ -20,11 +20,28 @@ function closeNav() {
 }
 
 let ring = document.querySelector(".ring");
+let champagne = document.querySelector(".champagne");
+let champagneBottle =document.querySelector(".champagneBottle");
+let flowers = document.querySelector(".flowers");
+let cake = document.querySelector(".cake");
+let gift = document.querySelector(".gift");
+let photo = document.querySelector(".photo");
+let heart = document.querySelector(".heart");
+
 
 window.onload = floatRing();
 
+
 function floatRing() {
+
     ring.classList.add("moveRing");
+    flowers.classList.add("moveFlowers");
+    cake.classList.add("moveCake");
+    gift.classList.add("moveGift");
+    photo.classList.add("movePhoto");
+    champagne.classList.add("moveChampagne");
+    champagneBottle.classList.add("moveChampagneBottle");
+    heart.classList.add("moveHeart");
     console.log('visible');
 }
 
