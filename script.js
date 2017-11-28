@@ -62,3 +62,62 @@ jQuery(document).ready(function($) {
 		}());
 	}
 });
+
+js: $( document ).ready(function() {
+    console.log( "ready!" );
+
+    $( ".wrapper-letters" ).hover(function() {
+        setTimeout(function(){
+            $( "#m" ).addClass( "animate-letter" );
+        }, 100);
+        setTimeout(function(){
+            $( "#e" ).addClass( "animate-letter" );
+        }, 300);
+        setTimeout(function(){
+            $( "#n" ).addClass( "animate-letter" );
+        }, 500);
+        setTimeout(function(){
+            $( "#u" ).addClass( "animate-letter" );
+        }, 700);
+
+        setTimeout(function(){
+            setTimeout(function(){
+                $( "#m" ).removeClass( "animate-letter" );
+            }, 0);
+            setTimeout(function(){
+                $( "#e" ).removeClass( "animate-letter" );
+            }, 200);
+            setTimeout(function(){
+                $( "#n" ).removeClass( "animate-letter" );
+            }, 400);
+            setTimeout(function(){
+                $( "#u" ).removeClass( "animate-letter" );
+            }, 600);
+        }, 900);
+    });
+
+});
+/////
+
+let layerlogo1 = document.querySelector("#Layer_1");
+
+
+$(function() { var logo = $("svg");
+$(window).scroll(function() {
+var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+      if(!logo.hasClass("sml-logo")) {
+        layerlogo1.classList.add(".hide");
+        logo.removeClass("logo").addClass("sml-logo").fadeIn( "slow");
+
+      }
+    } else {
+      if(!logo.hasClass("logo")) {
+        logo.hide();
+        logo.removeClass("sml-logo").addClass('logo').fadeIn( "slow");
+      }
+    }
+
+});
+});
