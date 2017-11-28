@@ -287,11 +287,15 @@ svg {
 
     display: flex;
 
+     padding-left: 3%;
+     padding-bottom: 2%;
+
 }
 
 
 h1 {
     font-family: 'Roboto', sans-serif;
+    margin-left: 5%;
 }
 
 h2 {
@@ -316,6 +320,8 @@ p {
 
     display: flex;
     flex-direction: column;
+
+
 
 }
 
@@ -387,6 +393,8 @@ input[type=submit]:hover {
     width: 100%;
     display: flex;
 
+    padding-bottom: 10%;
+
 }
 
 .right .subscribe .email {
@@ -396,6 +404,8 @@ input[type=submit]:hover {
     align-items: center;
     justify-content: center;
     display: inline-block;
+
+     padding-left: 20px;
 
 }
 
@@ -411,9 +421,13 @@ input[type=submit]:hover {
 /*image*/
 
 .pair {
-    width: 100%;
+    width: 70%;
     height: auto;
 
+}
+
+.right .update p {
+    font-size: 25px;
 }
 
 
@@ -608,6 +622,22 @@ button:active {
     flex-direction: column;
 }
 
+/*TABLET STYLE*/
+
+@media only screen and (max-width:780px) {
+
+    .mail img{
+        display: none;
+    }
+}
+
+.right p{
+    font-size: 14px;
+}
+
+
+
+/*MOBILE STYLE*/
 
 @media only screen and (max-width: 480px) {
     #mySidenav #openMenu {
@@ -620,16 +650,32 @@ button:active {
         width: 100%;
         height: auto;
         flex-direction: column;
+        padding: 0%;
     }
 
     .left {
         width: 80%;
         display: flex;
+
     }
 
     .right {
         width: 100%;
 
+    }
+
+    .pair{
+        width: 80%;
+    }
+
+    .email{
+        width: 100%;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .subscribe .mail .img{
+        display: none;
     }
 
 }
