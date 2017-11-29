@@ -16,7 +16,6 @@ body {
     height: 100vh;
     margin: 0;
 
-
 }
 
 /*Pink Buttons*/
@@ -238,11 +237,11 @@ button:active {
 }
 
 
-/*PAGE HEADERS */
+/*PAGE HEADER */
 
 #pageHeader {
     width: 100%;
-    height: 25vh;
+    height: auto;
 
 
     display: flex;
@@ -251,83 +250,6 @@ button:active {
 
     position: relative;
 
-}
-
-/*LOGO SVG */
-
-.hide {
-    display: none;
-}
-
-.wrapper {
-    height: auto;
-    position: relative;
-
-}
-
-.sml-logo {
-    background-image: url(wd.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    position: fixed;
-    width: 150px;
-    height: 200px;
-    text-align: center;
-    z-index: 5000;
-
-    margin-left: 47vw;
-    margin-top: -37vh;
-}
-
-svg {
-    width: 100%;
-    height: 10vw;
-
-}
-
-.cls-1 {
-    stroke-dasharray: 194.28973388671875;
-    stroke-dashoffset: 194.28973388671875;
-    animation: logo 12s linear forwards;
-    animation-delay: 1.5s;
-
-
-}
-
-.cls-1 {
-    position: relative;
-}
-
-@keyframes logo {
-
-    100% {
-        stroke-dashoffset: 0;
-
-    }
-}
-
-
-.cls-2 {
-    stroke-dasharray: 250;
-    stroke-dashoffset: 250;
-    animation: word 4s linear forwards;
-
-
-
-}
-
-@keyframes word {
-
-    100% {
-        stroke-dashoffset: 0;
-        background-color: black;
-    }
-}
-
-.cls-2 {
-    height: 200px;
-    width: 100px;
-    position: absolute
 }
 
 /*LOGO AILISH*/
@@ -348,15 +270,85 @@ svg {
     justify-content: center;
 }
 
-#pageHeader .logo img {
-    width: auto;
-    height: 100%;
+/*LOGO SVG*/
+
+svg {
+    width: 100%;
+    height: 10vw;
+
+}
+
+#stem_RIGHT_SIDE {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: stem 2s linear forwards;
+}
+
+@keyframes stem {
+
+    100% {
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.cls-1 {
+    stroke-dasharray: 194.28973388671875;
+    stroke-dashoffset: 194.28973388671875;
+    animation: logo 10s linear forwards;
+    animation-delay: 1.5s;
+}
+
+.cls-1 {
+    position: relative;
+}
+
+@keyframes logo {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.cls-2 {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: word 4s linear forwards;
+}
+
+@keyframes word {
+
+    100% {
+        stroke-dashoffset: 0;
+        background-color: black;
+    }
+}
+
+.cls-2 {
+    height: 200px;
+    width: 100px;
+    position: absolute
+}
+
+
+/*Main Image*/
+
+#content_wrapper{
+    width:100vw;
+    height:auto;
+}
+
+.image_container{
+    width:100vw;
+    height:auto;
 }
 
 .image_container .contact_img {
     width: 100vw;
     height: auto;
+    padding-top: 10%;
 }
+
+
 
 #pageHeader h1 {
     width: 100%;
@@ -372,35 +364,7 @@ svg {
     /*border:1px solid blue;*/
 }
 
-#pageHeader h1 span {
-    width: 100%;
-    font-size: 150%;
 
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
-
-    padding: 100px 10px 10px 10px;
-    text-align: left;
-    display: inline-block;
-    word-wrap: break-word;
-
-}
-
-#pageHeader #slogan {
-    width: 100%;
-    font-size: 150%;
-    padding: 20px;
-    display: inline-block;
-    text-align: center;
-
-
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
-
-    position: relative;
-    flex-wrap: wrap;
-    /*border:1px solid blue;*/
-}
 
 
 
@@ -449,18 +413,35 @@ svg {
     width: 100%;
     display: flex;
 
+
+
 }
+
+#section_menu .menu_left .left_menu_item a {
+    width: 100%;
+    display: flex;
+
+    justify-content: left;
+    align-items: left;
+    margin-left: 10px;
+
+}
+
+#section_menu .menu_left .left_menu_item a img {
+    margin-right: 10px;
+    margin-left: 20px;
+    align-content: left;
+}
+
 
 #section_menu .menu_left p {
     width: 100%;
     align-content: center;
-}
+    text-align: center;
 
-#section_menu .menu_left p {
-    width: 100%;
     font-family: 'Roboto', sans-serif;
     color: #000000;
-    font-size: 120% text-align: center;
+    font-size: 150%;
 
 }
 
@@ -991,30 +972,9 @@ svg {
 
 @media only screen and (max-width:780px) {
 
-    #pageHeader {
+  #pageHeader .logo {
         width: 100%;
-        height: 100vh;
-        background-size: 120%;
-        background-repeat: no-repeat;
-        grid-area: header;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    #pageHeader .pageHeader_right .app_logos .app {
-        width: 90%;
-        height: 40px;
-        background-size: contain;
-        background-position: center;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    }
-
-    /*LOGO */
-    #pageHeader .logo {
-        width: 100%;
-        height: 15vh;
+        height: 20vh;
 
 
         position: absolute;
@@ -1032,59 +992,47 @@ svg {
 */
     }
     #pageHeader .logo svg {
-        width: 30%;
+        width: 18%;
         height: auto;
     }
 
     /*Section 2*/
-    #section2 {
-        padding-bottom: 40px;
+  #section_menu .menu_left .left_menu_item a img {
+      display:none;
     }
 
-    #section2 .section2_right {
-        display: none;
-    }
-
-    #section2 .section2_left {
-        width: 80%;
-        height: auto;
-        padding: 0px 0px 0px 20px;
-        display: flex;
+      #section_menu .menu_left .left_menu_item a {
+     font-size: 18px;
+          align-items: center;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        flex-wrap: wrap;
-        /* border: 1px solid blue; */
     }
 
 
-    /*Section 3*/
-    #section3 {
-        padding-bottom: 40px;
-    }
-
-    #section3 .section3_right {
-        display: none;
-    }
-
-    #section3 .section3_left {
-        width: 80%;
-        height: auto;
-        padding: 0px 0px 0px 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        flex-wrap: wrap;
-        /* border: 1px solid blue; */
-    }
 
     /*Section 4*/
     #section4 {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #section4 h1 {
+        font-size: 150%;
+    }
+
+     #section4 #slogan {
+        font-size: 120%;
+    }
+
+    #section4 .section_top .category .category_heading{
+        font-size: 100%;
+    }
+
+      #section4 .section_middle .category .category_heading{
+        font-size: 100%;
+    }
+
+      #section4 .section_bottom .category .category_heading{
+        font-size: 100%;
     }
 
 }
@@ -1093,26 +1041,18 @@ svg {
 
 /*MOBILE STYLE*/
 
-@media only screen and (max-width:480px) {
-
-
-
+@media only screen and (max-width: 480px) {
     #mySidenav #openMenu {
         top: 10px;
         font-size: 1em;
     }
-    /*PAGE HEADERS */
-    #pageHeader {
+
+
+    .bigcontainer {
         width: 100%;
-        height: 100vh;
-
+        height: auto;
         flex-direction: column;
-
-        background-size: auto 100%;
-        background-position: center;
-
-        padding-top: 15vh;
-
+        padding: 0%;
     }
 
     /*LOGO */
@@ -1139,69 +1079,58 @@ svg {
         width: 25%;
         height: auto;
     }
-    #pageHeader .pageHeader_left {
-        width: 100%;
-        height: 65vh;
-        padding: 20px;
-        border: none;
+
+    .sml-logo {
+        background-image: url(wd.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        position: fixed;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        z-index: 5000;
+
+        margin-left: 47vw;
+        margin-top: -37vh;
     }
 
-    #pageHeader .pageHeader_left h1 span {
-        width: 100%;
-        font-size: 1.2em;
-        padding: 0px;
+    #section4 #slogan{
+        font-size: 100%;
+        padding-top: 0;
     }
 
-    #pageHeader .pageHeader_left #slogan {
-        width: 100%;
-        font-size: 1em;
-        padding: 0px;
-        display: inline-block;
-    }
-
-
-    /*Buttons Landing Page*/
-    #pageHeader .pageHeader_left .pink_buttons {
-
-        padding: 10px;
-
-        width: 100%;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-
-    #pageHeader .pageHeader_right {
-        width: 100%;
-        height: 10vh;
-
-    }
-
-    /*Apps Buttons Page Header*/
-    #pageHeader .pageHeader_right .app_logos {
-        width: 100%;
-        margin-top: 0px;
-        display: flex;
+        #section_menu .menu_left p {
+     font-size: 60%;
+          align-items: center;
         justify-content: center;
     }
 
+       #section_menu .menu_left .left_menu_item a {
+     font-size: 65%;
+          align-items: center;
+        justify-content: center;
+    }
 
-    #pageHeader .pageHeader_right .app_logos .app {
-        width: 45%;
-        height: 40px;
-        background-size: contain;
-        background-position: center;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        #section4 .section_top .category .category_heading{
+        font-size: 80%;
+            padding-top: 5px;
+            padding-bottom: 10px;
+
+    }
+
+      #section4 .section_middle .category .category_heading{
+        font-size: 80%;
+            padding-top: 5px;
+            padding-bottom: 10px;
+    }
+
+      #section4 .section_bottom .category .category_heading{
+        font-size: 80%;
+            padding-top: 5px;
+            padding-bottom: 10px;
     }
 
 
-
-    .sidenav a {
-        font-size: 18px;
-    }
 
     #section4 .btn_s4 {
         display: none;

@@ -564,9 +564,14 @@ button:active {
     height: 200px;
     text-align: center;
     z-index: 5000;
-
+    cursor: pointer;
     margin-left: 47vw;
     margin-top: -37vh;
+}
+
+.sml-logo:hover{
+     background-image: url(wdG.png);
+
 }
 
 svg {
@@ -1665,6 +1670,11 @@ svg {
         padding: 0px;
         display: inline-block;
     }
+
+    .sml-logo {
+     margin-left: 47vw;
+    margin-top: -43vh;
+}
 
 
     /*Buttons Landing Page*/
