@@ -191,7 +191,7 @@ body {
 
 /*LOGO AILISH*/
 
-#pageHeader #logo {
+#pageHeader .logo {
     width: 100%;
     height: 200px;
 
@@ -287,8 +287,8 @@ svg {
 
     display: flex;
 
-     padding-left: 3%;
-     padding-bottom: 2%;
+    padding-left: 3%;
+    padding-bottom: 2%;
 
 }
 
@@ -378,8 +378,8 @@ input[type=submit]:hover {
     align-items: center;
     text-align: center;
 
-     position: relative;
-     display: flex;
+    position: relative;
+    display: flex;
 
     flex-direction: column;
 
@@ -405,7 +405,7 @@ input[type=submit]:hover {
     justify-content: center;
     display: inline-block;
 
-     padding-left: 20px;
+    padding-left: 20px;
 
 }
 
@@ -626,12 +626,36 @@ button:active {
 
 @media only screen and (max-width:780px) {
 
-    .mail img{
+    #pageHeader .logo {
+        width: 100%;
+        height: 20vh;
+
+
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: auto;
+        z-index: 100;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*
+    border:1px solid blue;
+    background-color: yellow;
+*/
+    }
+    #pageHeader .logo svg {
+        width: 18%;
+        height: auto;
+    }
+
+    .mail img {
         display: none;
     }
 }
 
-.right p{
+.right p {
     font-size: 14px;
 }
 
@@ -653,6 +677,45 @@ button:active {
         padding: 0%;
     }
 
+    /*LOGO */
+    #pageHeader .logo {
+        width: 100%;
+        height: 15vh;
+
+
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: auto;
+        z-index: 100;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*
+    border:1px solid blue;
+    background-color: yellow;
+*/
+    }
+    #pageHeader .logo svg {
+        width: 25%;
+        height: auto;
+    }
+
+    .sml-logo {
+        background-image: url(wd.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        position: fixed;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        z-index: 5000;
+
+        margin-left: 47vw;
+        margin-top: -37vh;
+    }
+
     .left {
         width: 80%;
         display: flex;
@@ -664,17 +727,17 @@ button:active {
 
     }
 
-    .pair{
+    .pair {
         width: 80%;
     }
 
-    .email{
+    .email {
         width: 100%;
         padding-bottom: 20px;
         padding-left: 20px;
     }
 
-    .subscribe .mail .img{
+    .subscribe .mail .img {
         display: none;
     }
 

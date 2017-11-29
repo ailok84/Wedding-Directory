@@ -19,6 +19,8 @@ function closeNav() {
     document.querySelector("#mySidenav .content_sidenav").style.display="none";
 }
 
+$(".content_sidenav a").on("click", closeNav);
+
 let ring = document.querySelector(".ring");
 let champagne = document.querySelector(".champagne");
 let champagneBottle =document.querySelector(".champagneBottle");
@@ -99,25 +101,35 @@ js: $( document ).ready(function() {
 });
 /////
 
-let layerlogo1 = document.querySelector("#Layer_1");
 
 
-$(function() { var logo = $("svg");
-$(window).scroll(function() {
-var scroll = $(window).scrollTop();
 
-    if (scroll >= 500) {
-      if(!logo.hasClass("sml-logo")) {
-        layerlogo1.classList.add(".hide");
-        logo.removeClass("logo").addClass("sml-logo").fadeIn( "slow");
+$(function() {
+    var logo = $("svg");
+    let layerlogo1 = document.querySelector("#Layer_1");
+    let smlLogo = "";
+    $(window).scroll(function() {
 
-      }
-    } else {
-      if(!logo.hasClass("logo")) {
-        logo.hide();
-        logo.removeClass("sml-logo").addClass('logo').fadeIn( "slow");
-      }
-    }
+        var scroll = $(window).scrollTop();
 
-});
-});
+        if (scroll >= 500) {
+
+          if(!$(".logo").hasClass("sml-logo")) {
+            layerlogo1.classList.add("hide");
+            //logo.removeClass("logo").addClass("sml-logo").fadeIn( "slow");
+            $(".logo").removeClass("logo").addClass("sml-logo").fadeIn( "slow");
+            smlLogo = document.querySelector(".sml-logo");
+
+          }
+        }
+        else {
+          if(!$(".sml-logo").hasClass("logo")) {
+              smlLogo = document.querySelector(".sml-logo");
+             smlLogo.classList.add("hide");
+              layerlogo1.classList.remove("hide");
+            $(".sml-logo").removeClass("sml-logo").addClass('logo').fadeIn( "slow");
+          }
+        }
+
+    });
+})
