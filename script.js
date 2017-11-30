@@ -133,3 +133,22 @@ $(function() {
 
     });
 })
+
+
+
+document.querySelector(".logo").addEventListener("click",function(){
+
+
+    // hide the opening butto
+    //show the x button\
+    //show the content
+
+    console.log("i am  hi hi here");
+    document.querySelector("#openMenu").style.display="none";
+    document.querySelector("#mySidenav .closebtn").style.display="block";
+    document.querySelector("#mySidenav .content_sidenav").style.display="flex";
+
+
+$("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+})
