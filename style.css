@@ -269,7 +269,7 @@ button:active {
     width: 50px;
     height: 160px;
     background-image: url(champagne_bottle.png);
-    background-size: 100%;
+    background-size: 60%;
     background-repeat: no-repeat;
 
     display: flex;
