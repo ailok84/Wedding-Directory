@@ -236,6 +236,315 @@ button:active {
 
 }
 
+    .sml-logo {
+        background-image: url(wd.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        position: fixed;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        z-index: 5000;
+
+        margin-left: 47vw;
+        margin-top: -37vh;
+    }
+
+.sml-logo:hover{
+     background-image: url(wdG.png);
+
+}
+
+/*FLOATING ITEMS */
+.float{
+    visibility: hidden;
+}
+.ring {
+    width: 70px;
+    height: 70px;
+    background-image: url(ring.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 5000;
+
+}
+
+.champagne {
+    width: 20px;
+    height: 100px;
+    background-image: url(champagne.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+
+}
+
+.champagneBottle {
+    width: 50px;
+    height: 160px;
+    background-image: url(champagne_bottle.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 5000;
+
+}
+
+.flowers {
+    width: 50px;
+    height: 160px;
+    background-image: url(flowers1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 5000;
+}
+
+.cake {
+    width: 50px;
+    height: 160px;
+    background-image: url(cake.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+
+}
+
+.gift {
+    width: 50px;
+    height: 100px;
+    background-image: url(gift.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+
+}
+
+
+.photo {
+    width: 50px;
+    height: 100px;
+    background-image: url(photo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+
+}
+
+.heart {
+    width: 50px;
+    height: 100px;
+    background-image: url("heart.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+
+}
+
+.moveHeart {
+    animation-name: animationHeart;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+
+}
+
+
+.movePhoto {
+    animation-name: animationPhoto;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+
+}
+
+.moveGift {
+    animation-name: animationGift;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+
+}
+
+.moveFlowers {
+    animation-name: animationFlowers;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+
+}
+
+.moveCake {
+    animation-name: animationCake;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+.moveRing {
+    animation-name: animationRing;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+
+}
+
+.moveChampagne {
+    animation-name: animationChampagne;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+
+
+}
+
+.moveChampagneBottle {
+    animation-name: animationChampagneBottle;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animationHeart {
+    0% {
+        transform: translateY(10vh) translateX(50vw) rotate(0deg);
+    }
+    50% {
+        transform: translateY(30vh) translateX(50vw) rotate(360deg);
+    }
+    100% {
+        transform: translateY(10vh) translateX(50vw) rotate(0deg);
+    }
+
+}
+
+
+
+
+@keyframes animationPhoto {
+    0% {
+        transform: translateY(50vh) translateX(10vw) rotate(0deg);
+    }
+    50% {
+        transform: translateY(10vh) translateX(10vw) rotate(360deg);
+    }
+    100% {
+        transform: translateY(50vh) translateX(10vw) rotate(0deg);
+    }
+
+}
+
+
+@keyframes animationGift {
+    0% {
+        transform: translateY(90vh) translateX(90vw) rotate(0deg);
+    }
+    50% {
+        transform: translateY(50vh) translateX(95vw) rotate(360deg);
+    }
+    100% {
+        transform: translateY(90vh) translateX(90vw) rotate(0deg);
+    }
+
+}
+
+
+@keyframes animationCake {
+    0% {
+        transform: translateY(40vh) translateX(90vw) rotate(0deg);
+    }
+    50% {
+        transform: translateY(10vh) translateX(95vw) rotate(360deg);
+    }
+    100% {
+        transform: translateY(40vh) translateX(90vw) rotate(0deg);
+    }
+
+
+}
+
+
+
+@keyframes animationFlowers {
+    0% {
+        transform: translateY(95vh) translateX(50vw) rotate(0deg);
+    }
+    50% {
+        transform: translateY(80vh) translateX(50vw) rotate(360deg);
+    }
+    100% {
+        transform: translateY(95vh) translateX(50vw) rotate(0deg);
+    }
+
+
+}
+
+
+@keyframes animationChampagneBottle {
+    from {
+        transform: translateY(100vh) translateX(2vw) rotate(0deg);
+    }
+    to {
+        transform: translateY(-40vh) translateX(2vw) rotate(360deg);
+
+    }
+}
+
+@keyframes animationChampagne {
+    0% {
+        transform: translateY(70vh) translateX(80vw) rotate(0deg);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) rotate(360deg);
+    }
+    100% {
+        transform: translateY(70vh) translateX(80vw) rotate(0deg);
+    }
+
+
+}
+
+
+@keyframes animationRing {
+
+    0% {
+        transform: translateY(80vh) translateX(15vh) rotate(0deg);
+    }
+    50% {
+        transform: translateY(60vh) translateX(20vh) rotate(360deg);
+    }
+    100% {
+        transform: translateY(80vh) translateX(15vh) rotate(0deg);
+    }
+
+}
+
+
 
 /*PAGE HEADER */
 
@@ -1108,6 +1417,17 @@ svg {
     #section4 .section_bottom {
         padding-bottom: 20px;
     }
+
+    #section5 .app_buttons img {
+    width: auto;
+    height: auto;
+
+
+    padding: 5px;
+
+    cursor: pointer;
+
+}
 
     #section6 .quote-box {
         background-color: #e7e7e7;
